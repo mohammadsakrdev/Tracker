@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="app.sunshine.sakr.com.findyourchild.ui.SignUpActivity"
+                style="@style/AuthBackground">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubTitle"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer">
+
+    <EditText
+        android:id="@+id/userNameField"
+        style="@style/AuthEditText">
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/passwordField"
+        android:hint="@string/password_text_hint"
+        style="@style/AuthEditText"
+        />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailField"
+        android:hint="@string/email_text_hint"
+        style="@style/AuthEditText"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/button_divider"
+        android:contentDescription="@string/button_divider"/>
+    <Button
+        android:text="@string/sign_up_text"
+        android:id="@+id/signupButton"
+        style="@style/AuthButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toLeftOf="@+id/imageDivider"
+        android:layout_marginRight="0dp"/>
+    <Button
+        android:text="@string/cancel_button_label"
+        android:id="@+id/cancelButton"
+        style="@style/AuthButton"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_toRightOf="@+id/imageDivider"
+        android:layout_marginLeft="0dp"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_help_button_label">Get help</string>
+    <string name="action_add">Add</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="delete_contact">Delete</string>
+    <string name="edit_contact">Edit</string>
+    <string name="empty_messages_text">No messages</string>
+    <string name="empty_friends_text">no Friends</string>
+    <string name="username_text_hint">username</string>
+    <string name="password_text_hint">password</string>
+    <string name="email_text_hint">email</string>
+    <string name="login_button_label">Login</string>
+    <string name="signup_text_label">Sign Up!</string>
+    <string name="login_error_message_title">Ooops</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_get_help">Get help</string>
+    <string name="action_edit_friends">Edit Friends</string>
+    <string name="empty_recipients_list_message">Choose Some Friends First</string>
+    <string name="error_sending_message">There was an error</string>
+    <string name="subtitle">Find your child project</string>
+    <string name="content_desc">background for app</string>
+    <string name="button_divider">Button Divider</string>
+    <string name="no_users_text">No Users</string>
+    <string name="push_message">"You have a new Message from "</string>
+</resources>

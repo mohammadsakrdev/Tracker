@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="app.sunshine.sakr.com.findyourchild.ui.MainActivity">
+      <item android:id="@+id/action_edit_friends"
+            android:title="@string/action_edit_friends"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+      <item android:id="@+id/action_logout"
+            android:title="@string/action_logout"
+            android:orderInCategory="100"
+            app:showAsAction="never"/>
+      <item android:id="@+id/action_get_help"
+            android:icon="@mipmap/ic_menu_send"
+            android:orderInCategory="100"
+            app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Around_you" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_around_you</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Around_you</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Around_you</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Around_you</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Around_you</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Around_you</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_around_you</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_around_you</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Around_you</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Around_you.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Around_you.LightPurpleBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Around_you.LightPurpleBackground.GridView</item>
+
+    </style>
+
+    <style name="Theme.Around_you.LightPurpleBackground.GridView">
+        <item name="android:padding">@dimen/user_grid_spacing</item>
+    </style>
+
+    <style name="Theme.Around_you.LightPurpleBackground">
+        <item name="android:color">@color/light_purple_background</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="Theme.Around_you.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_menu_overflow</item>
+    </style>
+
+    <style name="ActionBar.Solid.Around_you" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_around_you</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_around_you</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_around_you</item>
+        <item name="progressBarStyle">@style/ProgressBar.Around_you</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Around_you.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Around_you.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Around_you" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_around_you</item>
+        <item name="progressBarStyle">@style/ProgressBar.Around_you</item>
+    </style>
+
+    <style name="PopupMenu.Around_you" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_around_you</item>
+    </style>
+
+    <style name="DropDownListView.Around_you" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_around_you</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Around_you" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_around_you</item>
+    </style>
+
+    <style name="DropDownNav.Around_you" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_around_you</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_around_you</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_around_you</item>
+    </style>
+
+    <style name="ProgressBar.Around_you" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_around_you</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Around_you" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_around_you</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Around_you.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Around_you</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Around_you</item>
+    </style>
+
+    <style name="AuthBackground">
+        <item name="android:background">@mipmap/background_fill</item>
+    </style>
+
+    <style name="AuthBackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:src">@mipmap/background</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:contentDescription">@string/content_desc</item>
+    </style>
+
+    <style name="AuthTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+
+    <style name="AuthSubTitle" parent="AuthTitle">
+        <item name="android:layout_below">@+id/title</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/subtitle</item>
+        <item name="android:layout_alignParentTop">false</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="AuthFieldContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/subtitle</item>
+        <item name="android:layout_marginTop">@dimen/login_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingLeft">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/login_vertical_padding</item>
+        <item name="android:paddingTop">@dimen/login_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/login_horizontal_padding</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="AuthEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/username_text_hint</item>
+        <item name="android:inputType">none</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="AuthButton" >
+        <item name="android:background">@drawable/button_custom</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+</resources>
